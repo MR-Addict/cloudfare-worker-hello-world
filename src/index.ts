@@ -4,6 +4,8 @@ export default {
   async fetch(req: Request): Promise<Response> {
     const headers = { "Access-Control-Allow-Origin": "*" };
 
+    if (req.method === "GET") return new Response("Hello wolrd!", { headers });
+
     const text = await req.text();
 
     const options = getOptions({});
