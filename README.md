@@ -2,4 +2,4 @@
 
 ## 1. Demo
 
-- [https://helloworld.mraddict.workers.dev](https://helloworld.mraddict.workers.dev)
+- [https://hello-world.mraddict.workers.dev](https://hello-world.mraddict.workers.dev)
