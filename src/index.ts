@@ -1,7 +1,16 @@
-export interface Env {}
+import { getOptions, qrcode } from "./qrcode";
 
 export default {
-  async fetch(request: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
-    return new Response("Hello World!");
+  async fetch(req: Request): Promise<Response> {
+    const headers = { "Access-Control-Allow-Origin": "*" };
+
+    const text = await req.text();
+
+    const options = getOptions({});
+    const result = qrcode(text, options);
+
+    return new Response(JSON.stringify(result), {
+      headers: { ...headers, "Content-Type": "application/json" },
+    });
   },
 };
