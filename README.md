@@ -6,7 +6,7 @@
 
 ## 2. QR Code
 
-You can also use this as an API route, if you put url like **https://hello-world.mraddict.workers.dev/qrcode/<text>** it will turn **text** to an QR Code.
+You can also use this as an API route.
 
 Have a try:
 
