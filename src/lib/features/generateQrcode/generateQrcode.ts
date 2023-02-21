@@ -1,8 +1,9 @@
 import qr from "qr-image";
 
-import OptionsType from "./types";
+import getOptions from "./getOptions";
 
-export default function qrcode(text: string, options: OptionsType) {
+export default function qrcode(text: string) {
+  const options = getOptions({});
   const data = qr.imageSync(text, { ...options, size: 20 });
   return { type: options.type, data };
 }

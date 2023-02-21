@@ -6,8 +6,12 @@
 
 ## 2. QR Code
 
-You can also use this as an API route.
-
-Have a try:
+Qrcode generator for any text:
 
 - [https://hello-world.mraddict.workers.dev/?qrcode=https://example.com](https://hello-world.mraddict.workers.dev/?qrcode=https://example.com)
+
+## 3. Daily quote
+
+Get daily good quote and image:
+
+- [https://hello-world.mraddict.workers.dev/?quote=2023-02-20](https://hello-world.mraddict.workers.dev/?quote=2023-02-20)
