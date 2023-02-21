@@ -9,8 +9,8 @@ export default async function quote(date?: string) {
       status: true,
       data: {
         date: result.dateline,
-        en: result.content,
         zh: result.note,
+        en: result.content,
         img: result.picture2,
         preview: result.picture,
       },

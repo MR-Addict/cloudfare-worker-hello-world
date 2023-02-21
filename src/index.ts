@@ -1,5 +1,5 @@
 import { queryParams, formatDate } from "./lib/utils";
-import { fetchQuote, generateQrcode } from "./lib/features";
+import { fetchQuote, generateQrcode } from "./lib/api";
 
 export default {
   async fetch(req: Request): Promise<Response> {
